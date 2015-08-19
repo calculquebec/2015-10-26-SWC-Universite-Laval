@@ -2,12 +2,12 @@
 layout: workshop
 root: .
 venue: Université Laval      # brief name of host site
-address: 1065, avenue de la Médecine, Québec, Qc    # street address of home location
+address: Local PLT-3966, 1065, avenue de la Médecine, Québec, Qc    # street address of home location
 country: Canada    # country (hyphenated if need be, like 'United-Kingdom')
 language: fr   # language code like 'en' or 'fr'
 latlng: 46.7788264,-71.2751692     # fractional latitude and longitude like 41.7901128,-87.6007318
 humandate: Oct 27-28, 2015  # use the format 'Feb 17-18, 2020' (without the quotes)
-humantime: 8:30 am - 4:30 pm# use the format '9:00 am - 4:30 pm' (without the quotes)
+humantime: 8:30 am - 4:30 pm # use the format '9:00 am - 4:30 pm' (without the quotes)
 startdate: 2015-10-27  # use YYYY-MM-DD format like 2015-01-01
 enddate: 2015-10-28    # use YYYY-MM-DD format like 2015-01-02
 instructor: ["Maxime Boissonneault", "Laurent Duchesne"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
@@ -51,19 +51,19 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+  La mission de <a href="{{site.swc_site}}">Software Carpentry</a> est
+  d'aider les scientifiques et ingénieurs à produire davantage de recherche
+  en moins de temps et plus facilement en leur enseignant des compétences de
+  base en calcul scientifique. Cet atelier pratique couvre des concepts et
+  outils de base, incluant le design de programmes, la gestion de révisions,
+  la gestion de données, et l'automatisation de tâches. Les participants
+  seront encouragés à s'entraider et à appliquer ce qu'ils ont appris
+  à leur propre problématique de recherche.
 </p>
 <p align="center">
   <em>
-    For more information on what we teach and why,
-    please see our paper
+    Pour davantage d'information sur la façon dont nous enseignons et le raisonnement derrière, voir
+    l'article (en anglais)
     "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
   </em>
 </p>
@@ -76,7 +76,7 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  L'atelier est dirigé principalement vers les étudiants gradués et autres chercheurs.
 </p>
 
 <!--
@@ -89,11 +89,11 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
 -->
 {% if page.latlng %}
 <p>
-  <strong>Where:</strong>
+  <strong>Où:</strong>
   {{page.address}}.
-  Get directions with
+  Obtenez les informations pour vous rendre à l'événement
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
-  or
+  ou
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
 </p>
 {% endif %}
@@ -104,11 +104,10 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with
-  a few specific software packages installed (listed
-  <a href="#setup">below</a>). They are also required to abide by
-  Software Carpentry's
-  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
+  <strong>Prérequis:</strong> Les participants doivent apporter leur propre ordinateur de préférence. 
+  Il est aussi recommandé d'installer les logiciels listés <a href="#setup">ci-dessous</a>. Des accès
+  à un serveur de calcul de Calcul Québec seront fournis lorsque nécessaire. Les participants doivent aussi
+  adhérer au <a href="{{site.swc_site}}/conduct.html">code de conduite</a> de Software Carpentry (en anglais).
 </p>
 
 <!--
@@ -120,13 +119,13 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
 -->
 <p>
   <strong>Contact</strong>:
-  Please mail
+  S'il-vous-plait contacter
   {% if page.contact %}
     <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
+  pour avoir davantage d'informations.
 </p>
 
 <hr/>
@@ -138,29 +137,29 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2>Schedule</h2>
+<h2>Horaire</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Jour 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>08:30</td>  <td>Automatiser des tâches avec la ligne de commande Unix</td> </tr>
+      <tr> <td>10:30</td> <td>Pause</td> </tr>
+      <tr> <td>12:00</td>  <td>Dîner</td> </tr>
+      <tr> <td>13:00</td>  <td>Introduction à la programmation avec Python</td> </tr>
+      <tr> <td>14:30</td>  <td>Pause</td> </tr>
+      <tr> <td>16:00</td>  <td>Conclusion</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
     <h3>Day 2</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>08:30</td>  <td>Gestion des révisions avec Git</td> </tr>
+      <tr> <td>10:30</td>  <td>Pause</td> </tr>
+      <tr> <td>12:00</td>  <td>Dîner</td> </tr>
+      <tr> <td>13:00</td>  <td>Premiers pas sur les serveurs de calcul</td> </tr>
+      <tr> <td>14:30</td>  <td>Pause</td> </tr>
+      <tr> <td>16:00</td>  <td>Conclusion</td> </tr>
     </table>
   </div>
 </div>
@@ -183,7 +182,7 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
 <p>
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
-  We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
+  Nous utiliserons cet Etherpad pour discuter, prendre des notes, et partager des adresses et extraits de code.
 </p>
 {% endif %}
 
@@ -206,32 +205,33 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2>Syllabus</h2>
+<h2>Plan de cours</h2>
 
 <div class="row">
   <div class="col-md-6">
-    <h3>The Unix Shell</h3>
+    <h3>Ligne de commande Unix</h3>
     <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Reference...</a></li>
+      <li>Introduction à la ligne de commande</li>
+      <li>Arborescence de fichiers et répertoires</li>
+      <li>Création, suppression et gestion de fichiers et répertoires</li>
+      <li>Combinaisons de commandes, redirections et filtres</li>
+      <li>Boucles</li>
+      <li>Scripts bash</li>
+      <li>Recherche de fichiers</li>
+      <li><a href="{{site.swc_lessons}}/ref/01-shell.html">Référence...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Programming in Python</h3>
+    <h3>Introduction à la programmation avec Python</h3>
     <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Reference...</a></li>
+      <li>Analyser des données avec des bibliothèques externes</li>
+      <li>Répéter des actions avec des boucles</li>
+      <li>Stocker des données dans des listes</li>
+      <li>Analyser des données issues de plusieurs fichiers</li>
+      <li>Faire des choix</li>
+      <li>Créer des fonctions</li>
+      <li>Tester son code, prévoir les erreurs et déboguer</li>
+      <li><a href="{{site.swc_lessons}}/ref/03-python.html">Référence...</a></li>
     </ul>
   </div>
   <!--
@@ -251,31 +251,29 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
 
 <div class="row">
   <div class="col-md-6">
-    <h3>Version Control with Git</h3>
+    <h3>Gestion de révisions avec Git</h3>
     <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Reference...</a></li>
+      <li>Introduction à la gestion des révisions</li>
+      <li>Configuration de Git</li>
+      <li>Créer un dépôt</li>
+      <li>Suivre les révisions</li>
+      <li>Explorer l’historique</li>
+      <li>Ignorer certains fichiers</li>
+      <li>Dépôts distants</li>
+      <li>Collaborer</li>
+      <li>Gestion des conflits</li>
+      <li>Science ouverte, licences et hébergement</li>
+      <li><a href="{{site.swc_lessons}}/ref/02-git.html">Référence...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
+    <h3>Premiers pas sur les serveurs de calcul</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_lessons}}/ref/04-sql.html">Reference...</a></li>
+      <li>Introduction au calcul informatique de pointe</li>
+      <li>Vocabulaire, composantes d’un ordinateur et structure d’une grappe de calcul</li>
+      <li>Transfert de fichiers à partir de/vers la grappe de calcul avec Globus</li>
+      <li>Utilisation de modules</li>
+      <li>Utilisation de l’ordonnanceur et soumission de tâches</li>
     </ul>
   </div>
 </div>
@@ -294,12 +292,18 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
   'tools/check' as well.
 -->
 
-<h2 id="setup">Setup</h2>
+<h2 id="setup">Installation</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need
-  access to the software described below. In addition, you will
-  need an up-to-date web browser.
+  Cet atelier Software Carpentry workshop utilisera un serveur de calcul de Calcul Québec. 
+  Pour y accéder à partir de Windows, nous vous recommandons d'installer 
+  <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html">Putty</a>
+  
+  Pour transférer des fichiers sur la grappe de calcul, vous aurez besoin du client
+  <a href="https://www.globus.org/globus-connect-personal">Globus personnel</a>
+  
+  Si vous désirez installer les logiciels sur votre ordinateur, vous pouvez suivre les instructions
+  ci-dessous (en anglais).
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
@@ -554,6 +558,7 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
   </p>
 </div> <!-- End of 'Python' section. -->
 
+<!-- 
 <div id="r"> <!-- Start of 'R' section. -->
   <h3>R</h3>
 
@@ -636,6 +641,7 @@ eventbrite: 17985345653 # optional (delete this if not used, otherwise uncomment
     Instructors will provide a workaround for it if needed.</strong></p>
 </div> <!-- End of 'SQLite' section. -->
 
+-->
 <!--
   Uncomment this section if you are using our virtual machine.
 
