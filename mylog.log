@@ -1,6 +1,5 @@
-Script started on Wed Oct 28 10:23:34 2015
-[?1034h]2;Mer oct 28 - 10:23  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson]1;Users/~[~]$ nano test
-[?1049h[1;44r(B[m[4l[?7h[?12l[?25h[?1h=[?1h=[?1h=[39;49m[39;49m(B[m[H[2J(B[0;7m  GNU nano 2.0.6                                                        File: test                                                                                                                      [42;95H[ New File ][43d^G(B[m Get Help[43;34H(B[0;7m^O(B[m WriteOut[43;67H(B[0;7m^R(B[m Read File[43;100H(B[0;7m^Y(B[m Prev Page[43;133H(B[0;7m^K(B[m Cut Text[43;166H(B[0;7m^C(B[m Cur Pos[44d(B[0;7m^X(B[m Exit[44;34H(B[0;7m^J(B[m Justify[44;67H(B[0;7m^W(B[m Where Is[44;100H(B[0;7m^V(B[m Next Page[44;133H(B[0;7m^U(B[m UnCut Text[44;166H(B[0;7m^T(B[m To Spell[3d[43d[J[44;200H[44;1H[?1049l[?1l>]2;Mer oct 28 - 10:23  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson]1;Users/~[~]$ ls
+Script started on Wed Oct 28 11:13:05 2015
+[?1034h]2;Mer oct 28 - 11:13  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson]1;Users/~[~]$ ls
 28-oct-15_10-04-15_shell.log		Google Drive				SQUACK_perfs				deaths before 50%.txt			pfbfonts
 28-oct-15_10-04-24_shell.log		Library					Scripts					discussion outreaching.txt		pyhpc-tutorial
 Applications				Movies					ScriptsGnuplot				filesystem-challenge.jpg		spectrum fitting.nb
@@ -11,50 +10,13 @@ Desktop					Pictures				Sync_Pro_Purchase.btskey		mercurial				updateTextMate
 Documents				Public					Vision CCSR.txt				mylog.log				utilisateurs à préparer.txt
 Downloads				RSNT.txt				__MACOSX				natbib					vpnc.backup
 Dropbox					SQUACK.key				answer.txt.txt				nikolaipub.txt
-]2;Mer oct 28 - 10:23  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson]1;Users/~[~]$ vim ~/.bash_profile
-[?1049h[?1h=[1;44r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[44;1H"~/.bash_profile" 99L, 3776C[>c[1;1H[1m[33m  1 [m[1m[36mPATH[m=[1m[34m$PATH[m:/usr/[1m[33mlocal[m/bin:/sw/bin:/opt/[1m[33mlocal[m/bin:/usr/[1m[33mlocal[m/GCALDaemon/bin:/Developer/usr/bin/
-[1m[33m  2 export[m[1m[36m PATH[m
-[1m[33m  3 [m[1m[36m#export TERM=dtterm[m
-[1m[33m  4 
-  5 export[m[1m[36m PATH=[m/gnuplot42/bin/:~/Scripts/:/usr/[1m[33mlocal[m/texlive/[1m[35m2007[m/bin/i386-darwin/:/Applications/Xcode.app/Contents/Developer/usr/bin/:[1m[34m$PATH[m
-[1m[33m  6 export[m[1m[36m PATH=[m/Developer/NVIDIA/CUDA[1m[35m-6[m.[1m[35m0[m/bin:[1m[34m$PATH[m
-[1m[33m  7 export[m[1m[36m DYLD_LIBRARY_PATH=[m/Developer/NVIDIA/CUDA[1m[35m-6[m.[1m[35m0[m/lib:[1m[34m$DYLD_LIBRARY_PATH[m
-[1m[33m  8 export[m[1m[36m SVN_EDITOR=[m/usr/bin/vim
-[1m[33m  9 export[m[1m[36m LC_CTYPE=[men_US.UTF[1m[35m-8[m
-[1m[33m 10 export[m[1m[36m DYLD_LIBRARY_PATH=[m/opt/intel/cc/[1m[35m10[m.[1m[35m0[m.[1m[35m016[m/lib/
-[1m[33m 11 export[m[1m[36m GNUTERM=[mx11
-[1m[33m 12 
- 13 test[m [1m[31m-r[m /sw/bin/init.sh &&[1m[33m . [m/sw/bin/init.sh
-[1m[33m 14 
- 15 echo[m[1m[35m [m[1m[33m"[m[1m[35mReading ~/.bash_profile[m[1m[33m"
- 16 
- 17 [m[1m[36m# Initialize FINK if needed[m
-[1m[33m 18 if [m[1m[31m[[[m [1m[33m![m [1m[33m-x[m [1m[34m$([m[1m[31mwhich fink[m[1m[34m)[m [1m[33m&&[m [1m[33m-d[m /sw/bin [1m[31m]][m[1m[33m;then
- 19 [m[9C [1m[33msource[m /sw/bin/init.sh
-[1m[33m 20 fi
- 21 [m[1m[36m# Set the DISPLAY variable -- works for Apple X11 with Fast User Switching[m
-[1m[33m 22 if [m[1m[31m[[[m [1m[33m-z[m [1m[34m$DISPLAY[m [1m[33m&&[m [1m[33m-z[m [1m[34m$SSH_CONNECTION[m [1m[31m]][m[1m[33m;[m [1m[33mthen
- 23 [m[9C [1m[36mdisp_no[m=[1m[33m([m[1m[34m$([m[1m[31m ps -awx [m[1m[33m|[m[1m[31m [m[1m[33mgrep[m[1m[31m -F X11.app [m[1m[33m|[m[1m[31m awk [m[1m[33m'[m[1m[35m{print $NF}[m[1m[33m'[m[1m[31m [m[1m[33m|[m[1m[31m [m[1m[33mgrep[m[1m[31m -e [m[1m[33m"[m[1m[35m:[0-9][m[1m[33m"[m[1m[31m  [m[1m[34m)[m[1m[33m)
- 24 [m[9C [1m[33mif [m[1m[31m[[[m [1m[33m-n[m [1m[34m$disp_no[m [1m[31m]][m[1m[33m;then
- 25 [m[15C [1m[33mexport[m[1m[36m DISPLAY=[m[1m[34m${disp_no}[m.[1m[35m0[m
-[1m[33m 26 [m[9C [1m[33melse
- 27 [m[15C [1m[33mexport[m[1m[36m DISPLAY=[m:[1m[35m0[m.[1m[35m0[m
-[1m[33m 28 [m[9C [1m[33mfi
- 29 [m[9C [1m[33mecho[m[1m[35m [m[1m[33m"[m[1m[35mDISPLAY has been set to [m[1m[34m$DISPLAY[m[1m[33m"
- 30 fi
- 31 
- 32 [m[1m[36m# iTerm Tab and Title Customization and prompt customization[m
-[1m[33m 33 [m[1m[36m# Put the string " [bash]   hostname::/full/directory/path"[m
-[1m[33m 34 [m[1m[36m# in the title bar using the command sequence[m
-[1m[33m 35 [m[1m[36m# \[\e]2;[bash]   \h::\]$PWD\[\a\][m
-[1m[33m 36 [m[1m[36m# Put the penultimate and current directory[m
-[1m[33m 37 [m[1m[36m# in the iterm tab[m
-[1m[33m 38 [m[1m[36m# \[\e]1;\]$(basename $(dirname $PWD))/\W\[\a\][m
-[1m[33m 39 [m[1m[36m# Make a simple command-line prompt:  bash-$[m
-[1m[33m 40 export[m[1m[36m PS1=[m[1m[33m'[m[1m[35m\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] [m[1m[33m'
- 41 
- 42 [m[1m[36mPS1[m=[1m[33m$'[m[1m[35m\[[m[1m[31m\e[m[1m[35m]2;\d - \@ - [bash] \h::$PWD[m[1m[31m\a[m[1m[35m\]\[[m[1m[31m\e[m[1m[35m]1;$(basename "$(dirname "$PWD")")/\W[m[1m[31m\a[m[1m[35m\][\W][m[1m[31m\$[m[1m[35m [m[1m[33m'
- 43 [1;5H[?12l[?25h[?25l[m[44;1H[K[44;1H:[?12l[?25hq[?25l[44;1H[K[44;1H[?1l>[?12l[?25h[?1049l]2;Mer oct 28 - 10:28  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson]1;Users/~[~]$ exit
+]2;Mer oct 28 - 11:13  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson]1;Users/~[~]$ cd tmp/data
+]2;Mer oct 28 - 11:13  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson/tmp/data]1;tmp/data[data]$ cd Users/nelle
+]2;Mer oct 28 - 11:13  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson/tmp/data/Users/nelle]1;Users/nelle[nelle]$ ls
+Desktop				data				north-pacific-gyre		pizza.cfg			thesis				writing
+creatures			molecules			notes.txt			solar.pdf			un fichier avec un espace
+]2;Mer oct 28 - 11:13  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson/tmp/data/Users/nelle]1;Users/nelle[nelle]$ cd creatures
+]2;Mer oct 28 - 11:13  - [bash] MacBook-Pro-de-Maxime::/Users/mboisson/tmp/data/Users/nelle/creatures]1;nelle/creatures[creatures]$ exit
 exit
 
-Script done on Wed Oct 28 10:36:45 2015
+Script done on Wed Oct 28 11:13:22 2015
